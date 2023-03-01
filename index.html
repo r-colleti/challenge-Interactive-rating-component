@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+
+  <main>
+
+    <section class="rateForm">
+
+      <div class="starIcon">
+        <img src="./images/icon-star.svg">
+      </div>
+
+      <div class="copyForm">
+        
+        <h1>How did we do?</h1>
+
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+      </div>
+
+      <form class="rateSelect">
+
+        <div class="radioArea">
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="rateValue" value="1">
+              <span>1</span>
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="rateValue" value="2">
+              <span>2</span>
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="rateValue" value="3">
+              <span>3</span>
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="rateValue" value="4">
+              <span>4</span>
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="rateValue" value="5">
+              <span>5</span>
+            </label>
+          </div>
+
+        </div>
+
+        <input type="Submit" name="" onclick="processRate()" class="btnProcess" value="SUBMIT">
+
+      </form>
+
+    </section>
+
+    <section class="rateMessage">
+
+      <div>
+        <figure><img src="./images/illustration-thank-you.svg"></figure>
+      </div>
+
+      <div class="rateSelected">
+        <p class="rateParagraph">You selected ... out of 5</p>
+      </div>
+
+      <div class="copyMessage">
+
+        <h2>Thank you!</h2>
+
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+
+      </div>
+      
+    </section>
+
+  </main>
+
+  <script type="text/javascript" src="./script.js"></script>
+
+</body>
+</html>

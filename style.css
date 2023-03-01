@@ -1,0 +1,187 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0 20px;
+	min-height: 100vh;
+	background-color: hsl(216, 12%, 8%);
+}
+
+main {
+	max-width: 410px;
+	width: 100%;
+	height: 415px;
+	background-color: blue;
+	border-radius: 30px;
+	background-color: hsl(213, 19%, 18%);
+}
+
+/* TIPOGRAFIA */
+
+/* rateForm */
+
+.copyForm h1 {
+	font-family: 'Overpass', sans-serif;
+	color: white;
+	font-weight: 700;
+	font-size: 30px;
+	margin: 0;
+}
+
+.copyForm p {
+	font-family: 'Overpass', sans-serif;
+	color: hsl(216, 12%, 54%);
+	font-weight: 400;
+	font-size: 15px;
+	margin: 0;
+}
+
+/* end rateForm */
+
+/* rateMessage */
+
+.copyMessage h2 {
+	font-family: 'Overpass', sans-serif;
+	color: white;
+	font-weight: 700;
+	font-size: 30px;
+	margin: 0 0 15px 0;
+	text-align: center;
+}
+
+.copyMessage p {
+	font-family: 'Overpass', sans-serif;
+	color: hsl(216, 12%, 54%);
+	font-weight: 400;
+	font-size: 15px;
+	margin: 0;
+	text-align: center;
+}
+
+/* end rateMessage */
+
+/* END TIPOGRAFIA */
+
+.rateForm {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 30px;
+}
+
+.starIcon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	background-color: hsl(214, 20%, 16%);
+	border-radius: 100%;
+}
+
+.rateSelect{
+	display: flex;
+	flex-direction: column;
+}
+
+.radioArea {
+	display: flex;
+	justify-content: space-between;
+}
+
+.radio {
+	width: 50px;
+	height: 50px;
+	position: relative;
+}
+
+.radio label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: hsl(214, 20%, 16%);
+	border-radius: 100%;
+}
+
+.radio label:hover {
+	cursor: pointer;
+	background-color: hsl(25, 97%, 53%);
+}
+
+.radio label span {
+	font-family: 'Overpass', sans-serif;
+	color: white;
+	font-weight: 400;
+	font-size: 15px;
+	z-index: 1;
+}
+
+.radio label input[type=radio] {
+	border-radius: 50px;
+  	all: unset;
+  	position: absolute;
+  	width: 100%;
+  	height: 100%;
+}
+
+.radio label input[type=radio]:checked {
+	background-color: hsl(213, 12%, 71%);
+	border-radius: 100%;
+}
+
+.btnProcess {
+	width: 100%;
+	height: 45px;
+	background-color: hsl(25, 97%, 53%);
+	border-radius: 20px;
+	border: none;
+	margin: 30px 0 0 0;
+	font-family: 'Overpass', sans-serif;
+	color: white;
+	font-weight: 400;
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+
+.btnProcess:hover {
+	cursor: pointer;
+	background-color: white;
+	color: hsl(25, 97%, 53%);
+}
+
+.rateMessage {
+	width: 100%;
+	height: 100%;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 40px 30px;
+}
+
+.rateSelected {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 190px;
+	height: 30px;
+	background-color: hsl(214, 20%, 16%);
+	border-radius: 15px;
+}
+
+.rateParagraph {
+	font-family: 'Overpass', sans-serif;
+	color: hsl(25, 97%, 53%);
+	font-weight: 400;
+	font-size: 15px;
+	margin: 0;
+	text-align: center;
+}
